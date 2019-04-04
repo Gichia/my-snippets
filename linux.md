@@ -37,21 +37,15 @@ More commands to follow here
 
 1. Create the partition.
 
-```
-$    fdisk -l
-```
-Will list out a detailed view of all block devices.
+```linux
+# List out all the device blocks on the system.
+$ fdisk -l
 
-```
-$  fdisk -l /dev/sda2
-```
-Will display a more detailed info about a particular device/disk.
+# Detailed info about a device
+$ fdisk -l /dev/sda1
 
+# Enter the fdisk command
+$ fdisk /dev/sda1
 ```
-$  fdisk /dev/sda2
-```
-To enter the fdisk command.
-
-
 
 2. Format the partition.
